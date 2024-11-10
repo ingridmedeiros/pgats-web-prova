@@ -24,3 +24,8 @@ jobs:
         run: yarn run test
         env: 
           CYPRESS_BASE_URL: 'https://automationexercise.com/'  
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-prova-testes
+          path: cypress/reports
